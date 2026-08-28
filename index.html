@@ -1,0 +1,434 @@
+O ChatGPT disse:
+Claro! Abaixo está um index.html completo, com um visual de projeto escolar sobre Problemas e Soluções na Escola. Ele funciona sozinho, sem precisar de outros arquivos.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Problemas e Soluções na Escola</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .inicio h2 {
+            color: #1d4ed8;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #1d4ed8;
+            margin-bottom: 35px;
+            font-size: 28px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .emoji {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .solucao {
+            background-color: #dcfce7;
+            border-left: 5px solid #16a34a;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .solucao strong {
+            color: #15803d;
+        }
+
+        .formulario {
+            background-color: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .formulario label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .formulario textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .inicio {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🏫 Problemas e Soluções na Escola</h1>
+        <p>Juntos podemos construir uma escola melhor!</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#problemas">Problemas</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#sugestao">Sugestão</a>
+    </nav>
+
+    <!-- Página inicial -->
+    <section class="inicio" id="inicio">
+        <h2>Sobre o Projeto</h2>
+
+        <p>
+            Este projeto tem como objetivo apresentar alguns dos principais
+            problemas encontrados no ambiente escolar e mostrar soluções que
+            podem ajudar a melhorar a convivência, a aprendizagem e o espaço
+            da escola.
+        </p>
+    </section>
+
+    <!-- Problemas -->
+    <section class="container" id="problemas">
+        <h2>⚠️ Problemas na Escola</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">🗑️</div>
+                <h3>Lixo espalhado</h3>
+                <p>
+                    O descarte incorreto de lixo pode deixar a escola suja
+                    e prejudicar o meio ambiente.
+                </p>
+
+                <div class="solucao">
+                    <strong>Solução:</strong>
+                    Colocar mais lixeiras e incentivar a reciclagem.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">💧</div>
+                <h3>Desperdício de água</h3>
+                <p>
+                    Torneiras abertas e vazamentos podem causar um grande
+                    desperdício de água.
+                </p>
+
+                <div class="solucao">
+                    <strong>Solução:</strong>
+                    Conscientizar os alunos e consertar torneiras com vazamento.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">📚</div>
+                <h3>Falta de materiais</h3>
+                <p>
+                    Alguns estudantes podem não ter acesso aos materiais
+                    necessários para acompanhar as aulas.
+                </p>
+
+                <div class="solucao">
+                    <strong>Solução:</strong>
+                    Criar campanhas de doação e um banco de materiais.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🤝</div>
+                <h3>Bullying</h3>
+                <p>
+                    O bullying pode prejudicar a autoestima e o bem-estar
+                    dos estudantes.
+                </p>
+
+                <div class="solucao">
+                    <strong>Solução:</strong>
+                    Promover campanhas de respeito, diálogo e conscientização.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🔊</div>
+                <h3>Barulho excessivo</h3>
+                <p>
+                    O excesso de barulho pode atrapalhar a concentração
+                    dos alunos durante as aulas.
+                </p>
+
+                <div class="solucao">
+                    <strong>Solução:</strong>
+                    Criar regras de convivência e conscientizar os estudantes.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🌱</div>
+                <h3>Poucas áreas verdes</h3>
+                <p>
+                    A falta de espaços verdes pode tornar o ambiente escolar
+                    menos agradável.
+                </p>
+
+                <div class="solucao">
+                    <strong>Solução:</strong>
+                    Criar uma horta ou jardim com a participação dos alunos.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Soluções -->
+    <section class="container" id="solucoes">
+        <h2>💡 Como Podemos Melhorar?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>♻️ Cuidar do meio ambiente</h3>
+                <p>
+                    Separar o lixo, economizar água e energia e cuidar
+                    das áreas verdes da escola.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Respeitar os colegas</h3>
+                <p>
+                    Praticar empatia, combater o bullying e ajudar quem
+                    estiver passando por dificuldades.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📖 Melhorar os estudos</h3>
+                <p>
+                    Criar grupos de estudo, compartilhar materiais e
+                    ajudar os colegas nas matérias.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🗣️ Incentivar o diálogo</h3>
+                <p>
+                    Alunos, professores e funcionários devem conversar
+                    sobre os problemas e procurar soluções juntos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="container" id="sugestao">
+        <h2>💬 Envie sua Sugestão</h2>
+
+        <div class="formulario">
+
+            <form onsubmit="enviarSugestao(event)">
+
+                <label for="nome">Seu nome:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="problema">Qual problema você identificou?</label>
+
+                <input
+                    type="text"
+                    id="problema"
+                    placeholder="Ex: Falta de lixeiras"
+                    required
+                >
+
+                <label for="mensagem">Qual seria a solução?</label>
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Digite sua ideia..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar sugestão
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>🏫 Projeto Problemas e Soluções na Escola</p>
+        <p>Feito para incentivar uma escola melhor para todos.</p>
+    </footer>
+
+    <script>
+        function enviarSugestao(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const problema = document.getElementById("problema").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            alert(
+                "Obrigado, " + nome + "!\n\n" +
+                "Problema: " + problema + "\n" +
+                "Solução sugerida: " + mensagem
+            );
+
+            document.querySelector("form").reset();
+        }
+    </script>
+
+</body>
+</html>
